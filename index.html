@@ -7,7 +7,9 @@
     <title>Open URL</title>
 </head>
 <body>
-    <input type="text" id="url">
-    <button onclick="window.open(document.getElementById('url').value, '_self')">Open</button>
+    <div style="position:absolute;left:50%;top:50%;transform:translate(-50%)">
+        <input type="text" id="url">
+        <button onclick="window.open(document.getElementById('url').value, '_self')">Open</button>
+    </div>
 </body>
 </html>
