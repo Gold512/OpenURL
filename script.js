@@ -1,6 +1,9 @@
+const header = 'https://'
+
 function openLink() {
     let url = document.getElementById('url').value
-    window.open(new URL(url), '_self');
+    if(url.slice(0, header.length - 1) === header) url = header + url;
+    window.open(url, '_self');
 }
 
 document.addEventListener('keydown', ev => {
